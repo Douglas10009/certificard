@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+
+body {
+	background: linear-gradient(236.85deg, #60b044 27.26%, #34a7a7 96.03%);
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+	background: #f7f7f7;
+	color: #1c1c1c; /*Muda a cor da fonte*/
+	margin: 64px; /*Coloca margem no conteiner*/
+	border-radius: 20px; /*Deixar a borda redonda*/
+	box-shadow: 6px 6px 6px #0e1d2f; /*Dá uma sombra para o efeito 3d a caixa*/
+	padding: 64px; /*Margem interior do espaço*/
+}
+
+.cabecalho {
+	display: flex;
+	justify-content: space-between; /*Deixa o botão na direita*/
+}
+.perfil {
+	/*Flex box, estilizar dinanicamente objetos a partir de um elemento pai*/
+	display: flex; /*Dizer que vai usar o flex box*/
+}
+
+.perfil-foto {
+	border-radius: 460px; /*Deixa arredondada a imagem*/
+	max-height: 160px; /*Limita o tamanho da imagem*/
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /*Sombra na caixa*/
+}
+
+.titulo {
+	margin-left: 16px; /*Deixa uma margem a esquerda*/
+}
+
+.titulo h1 {
+	font-weight: 700; /*Grossura do traço*/
+	font-size: 36px; /*Tamanho da fonte*/
+}
+
+.titulo h3 {
+	font-weight: 400;
+	font-size: 24px;
+}
+
+.tema button {
+	align-self: flex-end;
+	align-items: center;
+	display: flex;
+	font-size: 16px;
+	padding: 8px 16px; /*Cima, baixo, */
+	background: #ecf4ff;
+	box-sizing: border-box;
+	border-radius: 100px;
+	border: 2px solid #0e1d2f;
+}
+
+#tema-claro {
+	max-height: 30px;
+	padding: 5px;
+}
+
+#tema-escuro {
+	max-height: 30px;
+	pading: 5px;
+	margin: 5px;
+}
+
+.icone {
+	font-size: 10px;
+	color: #1c1c1c; /*Cor do texto*/
+	text-decoration: none; /*Tirar a decoração do texto*/
+}
+
+.projetos {
+	display: flex;
+	flex-direction: column; /*Direção desses itens flexiveis*/
+	background: linear-gradient(230.65deg, #87ff5c 27.49%, #9cc8fc 83.19%);
+	margin-top: 32px;
+	padding: 32px;
+	box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+	border-radius: 20px;
+}
+
+.projetos-titulo {
+	list-style: none;
+	font-weight: 700;
+	font-size: 36px;
+}
+
+.projetos-itens {
+	list-style-type: none;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 38px;
+}
+
+.projetos-itens a {
+	color: #1c1c1c; /*Cor do texto*/
+	text-decoration: none; /*Tirar a decoração do texto*/
+}
+
+.dark {
+	/*Tag body como clas dark*/
+	background: linear-gradient(236.85deg, #30692f 27.26%, #4c5f75 96.03%);
+}
+
+.dark .container {
+	background: #333439;
+	color: #f6f6f6;
+}
+
+.dark .projetos {
+	color: #1c1c1c;
+}
+
+.dark .tema button {
+	background: #1c1c1c;
+	color: #ffffff;
+	border: 2px solid #f7f7f7;
+}
+
+.dark .icone {
+	color: #f6f6f6;
+}
